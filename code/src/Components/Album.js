@@ -1,5 +1,6 @@
 import React from "react";
-import data from "./data.json";
+import data from "../data.json";
+import { Artist } from "./Artist";
 
 export const Album = () => {
   return (
@@ -19,6 +20,10 @@ export const Album = () => {
             >
               {item.name}
             </a>
+            <Artist item={item} />
+            {/* <a href={item.artists[0].external_urls.spotify}>
+              {item.artists[0].name}
+            </a> */}
           </div>
         );
       })}
