@@ -2,7 +2,7 @@ import React from "react";
 
 export const Artist = props => {
   return (
-    <div>
+    <div className="artistName">
       {/* data.albums.items.artists.name */}
       <a
         href={props.item.external_urls.spotify}

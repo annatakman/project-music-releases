@@ -1,13 +1,17 @@
 import React from "react";
 import data from "../data.json";
 import { Album } from "./Album";
+import { Heading } from "./Heading";
 
 export const App = () => {
   return (
-    <div>
-      {data.albums.items.map(item => {
-        return <Album key={item.id} item={item} />;
-      })}
-    </div>
+    <section>
+      <Heading />
+      <section className="albumContainer">
+        {data.albums.items.map(album => {
+          return <Album key={album.id} item={album} />;
+        })}
+      </section>
+    </section>
   );
 };
