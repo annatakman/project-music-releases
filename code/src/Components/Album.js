@@ -1,6 +1,7 @@
 import React from "react";
 import { Artist } from "./Artist";
 import { Icons } from "./Icons";
+import "./album.css";
 
 export const Album = props => {
   return (
@@ -21,10 +22,11 @@ export const Album = props => {
       >
         {props.item.name}
       </a>
-      {console.log(props.item.artists.length)}
-      {props.item.artists.map(artist => {
-        return <Artist key={artist.id} item={artist} />;
-      })}
+      <div className="artistContainer">
+        {props.item.artists.map(artist => {
+          return <Artist key={artist.id} item={artist} />;
+        })}
+      </div>
     </article>
   );
 };

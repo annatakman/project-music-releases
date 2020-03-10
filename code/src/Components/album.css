@@ -1,0 +1,30 @@
+.albumCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer {
+  position: relative;
+  background-color: black;
+}
+
+.albumImage {
+  display: block;
+  width: 100%;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.imageContainer:hover .albumImage {
+  opacity: 0.4;
+}
+
+.albumTitle {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.albumTitle:hover {
+  text-decoration: underline;
+}

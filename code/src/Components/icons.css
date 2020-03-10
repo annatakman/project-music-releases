@@ -1,0 +1,64 @@
+.iconsContainer {
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+.imageContainer:hover .iconsContainer {
+  display: flex;
+}
+
+.heartIcon {
+  width: 58px;
+  filter: invert(1);
+}
+
+.playIcon {
+  width: 130px;
+  filter: invert(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.playIcon:hover {
+  transform: scale(1.2);
+}
+
+.dotsIcon {
+  width: 58px;
+  filter: invert(1);
+}
+
+@media (min-width: 668px) {
+  .heartIcon {
+    width: 50px;
+  }
+
+  .playIcon {
+    width: 110px;
+  }
+
+  .dotsIcon {
+    width: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heartIcon {
+    width: 40px;
+  }
+
+  .playIcon {
+    width: 90px;
+  }
+
+  .dotsIcon {
+    width: 40px;
+  }
+}

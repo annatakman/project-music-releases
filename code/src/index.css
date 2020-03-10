@@ -13,35 +13,32 @@ code {
     monospace;
 }
 
-#root {
-  width: 100%;
-}
-
-h1 {
-  margin: 0 0 15px 0;
-}
-
 /* ALBUM CARD */
-
+/* 
 .albumContainer {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
 }
 
 .albumCard {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
 }
 
 .imageContainer {
   position: relative;
+  background-color: black;
 }
 
 .albumImage {
+  display: block;
   width: 100%;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.imageContainer:hover .albumImage {
+  opacity: 0.4;
 }
 
 .albumTitle {
@@ -51,18 +48,27 @@ h1 {
   font-weight: bold;
 }
 
-.artistName a {
+.albumTitle:hover {
+  text-decoration: underline;
+} */
+
+/* .artistName {
+  display: contents;
   color: #a0a0a0;
   text-decoration: none;
   font-size: 14px;
 }
 
-a:hover {
-  text-decoration: underline;
+.artistName:not(:last-child):after {
+  content: ", ";
 }
 
-/* ICONS */
+.artistName:hover {
+  text-decoration: underline;
+} */
 
+/* ICONS */
+/* 
 .iconsContainer {
   display: none;
   flex-direction: row;
@@ -78,16 +84,15 @@ a:hover {
 
 .imageContainer:hover .iconsContainer {
   display: flex;
-  background: rgba(0, 0, 0, 0.6);
 }
 
 .heartIcon {
-  width: 40px;
+  width: 58px;
   filter: invert(1);
 }
 
 .playIcon {
-  width: 90px;
+  width: 130px;
   filter: invert(1);
   transition: all 0.3s ease-in-out;
 }
@@ -97,17 +102,41 @@ a:hover {
 }
 
 .dotsIcon {
-  width: 40px;
+  width: 58px;
   filter: invert(1);
-}
+} */
 
-@media (min-width: 668px) {
+/* @media (min-width: 668px) {
   .albumContainer {
-    flex-flow: row wrap;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+  } */
+/* .heartIcon {
+    width: 50px;
   }
 
-  .albumCard {
-    width: 49%;
+  .playIcon {
+    width: 110px;
   }
-}
+
+  .dotsIcon {
+    width: 50px;
+  } */
+/* } */
+
+/* @media (min-width: 1024px) {
+  .albumContainer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  } */
+
+/* .heartIcon {
+    width: 40px;
+  }
+
+  .playIcon {
+    width: 90px;
+  }
+
+  .dotsIcon {
+    width: 40px;
+  } */
+/* } */

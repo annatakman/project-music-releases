@@ -1,16 +1,15 @@
 import React from "react";
+import "./artist.css";
 
 export const Artist = props => {
   return (
-    <div className="artistName">
-      {/* data.albums.items.artists.name */}
-      <a
-        href={props.item.external_urls.spotify}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {props.item.name}
-      </a>
-    </div>
+    <a
+      className="artistName"
+      href={props.item.external_urls.spotify}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {props.item.name}
+    </a>
   );
 };

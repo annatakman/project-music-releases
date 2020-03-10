@@ -1,0 +1,14 @@
+.artistName {
+  display: contents;
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.artistName:not(:last-child):after {
+  content: ", ";
+}
+
+.artistName:hover {
+  text-decoration: underline;
+}
