@@ -1,12 +1,26 @@
-# Music Releases
-Replace this readme with your own information about your project.
+# What is this
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The second pair programming assignment during the Technigo bootcamp.
+Assignment: **Build a Music Releases site**.
 
-## The problem
+## How We started
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We watched all the video material to prepare for the project. This was our first React project. We started by doing the components and left the styling for the end. When we created the components we started with the most general ones and continued into greater and greater detail.
+We swapped driver/navigator throughout the project.
+
+### What We struggled with and should improve for next pair programming project
+
+As mentioned, this was our first encounter with React and it was a lot to take in. But even though it was a new concept that was challenging we managed to end the project with understanding it and even to finish the stretch goals. So rather than improve something for the next pair programming project both of us should take with us that sometimes it's better do discuss things that one dosen't understand than starting to google right away.
+
+### What We're proud of
+
+We're proud that we not only managed to go from feeling rather lost to understanding props, but even understand how to deconstruct them. Another thing were proud of is the code structure that is super organised, including the CSS.
+
+## If We had more time
+
+If we hade more time (and lived in the same city) we would celebrate with a drink!
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Music Releases website:
+https://popularonspotify.netlify.com/
