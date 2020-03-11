@@ -1,7 +1,23 @@
+.siteContainer {
+  display: flex;
+}
+
 .albumContainer {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
+}
+
+.playlistContainer {
+  width: 40%;
+  height: fit-content;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 2px solid rgb(160, 160, 160, 0.3);
+}
+
+h3 {
+  margin: 0 0 15px;
 }
 
 @media (min-width: 668px) {
@@ -13,5 +29,9 @@
 @media (min-width: 1024px) {
   .albumContainer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .playlistContainer {
+    width: 30%;
   }
 }
