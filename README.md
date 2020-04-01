@@ -23,4 +23,4 @@ If we hade more time (and lived in the same city) we would celebrate with a drin
 ## View it live
 
 Music Releases website:
-https://popularonspotify.netlify.com/
+https://popular-on-spotify.netlify.com/
